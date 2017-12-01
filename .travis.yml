@@ -8,7 +8,8 @@ before_script:
 
 script:
   - npm install
-  - ng build --prod --aot=false
+  - ng build --prod --aot=
+  - cp dist ./Docker/dist
 
 notifications:
   email:

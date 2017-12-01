@@ -6,11 +6,13 @@
 Execute os comandos abaixo
 ```bash
 $ git clone https://github.com/jesielconceicao/app-template-angular
+
 $ cd app-template-angular
-# Instalar as dependëncias
+
+# Comando para Instalar as dependëncias
 $ npm install
 
-# Para compilar
+# Comando para compilar
 $ npm run build
 ```
 
@@ -23,6 +25,6 @@ $ npm run build
 ### Para rodar a aplicação
 `ng serve`.
 
-### Further help
+### Ajuda adicional
 
 Pra ter mais ajuda sobre o Angular CLI use `ng help` ou verifique no [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
