@@ -21,7 +21,5 @@ notifications:
     on_success: change
 
 after_success:
-  - if [ "$TRAVIS_BRANCH" == "master" ]; then
-    docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD";
-    docker push jesielconceicao/app-template-angular;
-    fi
+  - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
+  - docker push jesielconceicao/app-template-angular
