@@ -8,9 +8,9 @@ before_script:
 
 script:
   - npm install
-  - ng build --prod --aot=
-  - cp -r dist/* ./Docker/dist
+  - ng build --prod --aot=false
   - mkdir ./Docker/dist
+  - cp -r dist/* ./Docker/dist
   - docker build ./Docker/ -t app-template
 
 notifications:
