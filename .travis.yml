@@ -11,7 +11,7 @@ script:
   - ng build --prod --aot=false
   - mkdir ./Docker/dist
   - cp -r dist/* ./Docker/dist
-  - docker build ./Docker/ -t app-template
+  - docker build ./Docker/ -t jesielconceicao/app-template-angular
 
 notifications:
   email:
