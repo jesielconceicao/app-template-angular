@@ -12,6 +12,8 @@ script:
   - mkdir ./Docker/dist
   - cp -r dist/* ./Docker/dist
   - docker build ./Docker/ -t jesielconceicao/app-template-angular
+  - docker run -d -p 8080:8080 jesielconceicao/app-template-angular
+  - docker ps -a
 
 notifications:
   email:
