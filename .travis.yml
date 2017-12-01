@@ -9,7 +9,7 @@ before_script:
 script:
   - npm install
   - ng build --prod --aot=
-  - cp dist ./Docker/dist
+  - cp -r dist/* ./Docker/dist
 
 notifications:
   email:
