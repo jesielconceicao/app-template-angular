@@ -10,6 +10,8 @@ script:
   - npm install
   - ng build --prod --aot=
   - cp -r dist/* ./Docker/dist
+  - mkdir ./Docker/dist
+  - docker build ./Docker/ -t app-template
 
 notifications:
   email:
