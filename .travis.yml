@@ -17,3 +17,9 @@ notifications:
   email:
     on_failure: change
     on_success: change
+
+after_success:
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then
+    docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD";
+    docker push jesielconceicao/app-template-angular;
+    fi
